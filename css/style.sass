@@ -1,0 +1,343 @@
+// Fonts URL'S
+$lato-font: 'http://fonts.googleapis.com/css?family=Lato:400,700'
+$montse-font: 'http://fonts.googleapis.com/css?family=Montserrat:400,700'
+
+//Font Stacks (pila/montón)
+$stack-lato: 'Lato', sans-serif
+$stack-montse: 'Montserrat', sans-serif
+
+// Colores
+$color-azul:#32485e
+$color-turquesa: #18bc9c
+
+// ESTUDIAR MIXINS
+
+body
+	padding: 0px
+	margin: 0px
+
+	a
+		text-decoration: none
+
+	ul
+		list-style: none
+		padding: 0px
+		margin: 0px
+
+	li
+		list-style: none
+		padding: 0px
+		margin: 0px
+
+	header nav
+		background-color: $color-azul
+		height: 50px
+		a.home
+			float: left
+			margin-left: 70px
+			font-family: $stack-montse
+			font-size: 16px
+			color: #fff
+			font-weight: 700
+			text-transform: uppercase
+			display: inline-block
+			margin-top: 16px
+		ul
+			float: right
+			margin-right: 70px
+			li
+				display: inline-block
+				font-family: $stack-montse
+				font-weight: 700
+				text-transform: uppercase
+				padding-right: 30px
+				margin-top: 16px
+				font-size: 14px
+				a
+					color: #fff
+
+	@media (max-width: 720px)
+		header
+			nav
+				ul
+					float: left
+					margin-top: 54px
+					margin-left: -155px
+			.nav-mobile
+				background-color: $color-azul
+				height: 50px
+				border-top: 2px solid #385877
+
+	@media (max-width: 458px)
+		header
+			nav
+				a.home
+					margin-left: 50px
+				ul
+					width: 300px
+					display: block
+					display: inline-block
+					float: left
+					margin-left: 50px
+					margin-top: 20px
+
+	.container
+		background-color: $color-turquesa
+		height: 617px
+		margin-top: -16px
+		ul.developer li figure img.profile
+			margin: auto
+			display: block
+			padding-top: 95px
+		h1
+			font-family: $stack-montse
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 50px
+			color: #fff
+			text-align: center
+		img.estrella
+			margin: auto
+			display: block
+			margin-top: -30px
+		h5
+			font-family: $stack-lato
+			font-weight: 400
+			font-size: 26px
+			color: #fff
+			text-align: center
+			margin-top: -10px
+
+	@media (max-width: 620px)
+		.container
+			ul.developer
+				li
+					h1
+						font-size: 44px
+
+	@media (max-width: 550px)
+		.container
+			ul.developer
+				li
+					h1
+						font-size: 40px
+
+	@media (max-width: 530px)
+		.container
+			ul.developer
+				li
+					h1
+						font-size: 36px
+
+	@media (max-width: 450px)
+		.container
+			ul.developer
+				li
+					h1
+						font-size: 30px
+					figure
+						img.estrella
+							width: 200px
+					h5
+						font-size: 20px
+
+	@media (max-width: 400px)
+		.container
+			ul.developer
+				li
+					figure
+						img.profile
+							width: 220px
+					h5
+						font-size: 16px
+
+	@media (max-width: 370px)
+		.container
+			ul.developer
+				li
+					h1
+						font-size: 26px
+					figure
+						img.estrella
+							margin-top: -20px
+
+	.portafolio
+		height: 750px
+		h2
+			font-family: $stack-montse
+			font-weight: 700
+			text-transform: uppercase
+			color: $color-azul
+			font-size: 40px
+			display: block
+			text-align: center
+			margin-top: 70px
+		img.estrella-azul
+			display: block
+			margin: auto
+			margin-top: -25px
+			margin-bottom: 40px
+		ul
+			float: left
+			padding-left: 95px
+			li
+				display: inline-block
+				margin: -30px
+				margin-bottom: 20px
+				a
+					figure
+						img
+							width: 360px
+
+	.sobremi
+		background-color: $color-turquesa
+		height: 500px
+		h3
+			font-family: $stack-montse
+			font-weight: 700
+			color: #fff
+			text-transform: uppercase
+			font-size: 40px
+			text-align: center
+			padding-top: 80px
+		img.estrella
+			display: block
+			margin: auto
+			margin-top: -30px
+		p
+			margin-top: 30px
+			margin-left: 240px;
+			margin-right: 240px;
+			font-family: $stack-lato
+			font-weight: bold;
+			font-size: 18px;
+			color: #fff;
+			line-height: 27px;
+			column-count: 2;
+			column-gap: 30px;
+			-moz-column-count: 2;
+			-moz-column-gap: 30px;
+			-webkit-column-count: 2;
+			-webkit-column-gap: 30px;
+
+	.contact
+		height: 720px
+		margin-top: -40px
+		h3
+			font-family: $stack-montse
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 40px
+			color: $color-azul
+			display: block
+			text-align: center
+			padding-top: 60px
+		img.estrella
+			display: block
+			margin: auto
+			margin-top: -30px
+		form
+			input[type=name]
+				height: 70px
+				width: 780px
+				display: block
+				margin: auto
+				border-style: none
+				border-top: 1px solid #cecece
+				padding-left: 20px
+			input[type=email]
+				height: 70px
+				width: 780px
+				display: block
+				margin: auto
+				border-style: none
+				border-top: 1px solid #cecece
+				padding-left: 20px
+			input[type=phone]
+				height: 70px
+				width: 780px
+				display: block
+				margin: auto
+				border-style: none
+				border-top: 1px solid #cecece
+				padding-left: 20px
+			input[type=message]
+				height: 170px
+				width: 780px
+				display: block
+				margin: auto
+				border-style: none
+				border-top: 1px solid #cecece
+				border-bottom: 1px solid #cecece
+				padding-left: 20px
+		input[type=submit]
+			text-align: center;
+			background-color: #18bc9c;
+			padding: 18px 20px;;
+			border: 2px solid #fff;
+			border-radius: 5px;
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			font-size: 20px;
+			display: block;
+			margin-top: 30px;
+			margin-left: 280px;
+
+	footer
+		background-color: $color-azul
+		height: 230px
+		margin-top: -20px
+		.direccion
+			width: 300px
+			float: left
+			margin-left: 300px
+			margin-top: 40px
+			h4
+				font-family: $stack-montse
+				font-weight: 700
+				text-transform: uppercase
+				color: #fff
+				text-align: center
+				font-size: 25px
+			address
+				font-family: $stack-lato
+				font-weight: 700
+				color: #fff
+				font-size: 18px
+				text-align: center
+				margin-top: -10px
+		.social
+			width: 400px
+			float: right
+			margin-right: 300px
+			margin-top: 40px
+			h4
+				font-family: $stack-montse
+				font-weight: 700
+				text-transform: uppercase
+				color: #fff
+				text-align: center
+				font-size: 25px
+			ul
+				margin-left: 100px
+				margin-top: -30px
+				li
+					display: inline-block
+					margin-left: -60px
+					a figure img
+						width: 40px
+						height: 40px
+
+	.copyright
+		background-color: #233140
+		height: 70px
+		margin-top: -16px
+		p
+		padding-top: 25px
+		font-family: 'Lato', sans-serif;
+		font-weight: bold;
+		color: #fff;
+		display: block;
+		text-align: center;
+			
